@@ -240,7 +240,51 @@ exit()
     reverse() #Reverses the order of the list
     sort() #Sorts the list
 
+#Tuple
+    """Create a tuple"""
+    thistuple =("apple", "banana", "pear")
+
+    """Access a tuple item - Return the item in position 1"""
+    thistuple = ("apple", "banana", "cherry")
+    print(thistuple[1])
+
+    """Change tuple value - You cannot change values in a tuple"""
+    thistuple = ("apple", "banana", "cherry")
+    thistuple[1] = "blackcurrant"
+    # The values will remain the same:
+    print(thistuple)
+
+    """Loop through a tuple - You can loop through the tuple items by using a for loop"""
+    thistuple = ("apple", "banana", "cherry")
+    for x in thistuple:
+        print(x)
     
+    """Check if Item Exists - To determine if a specified item is present in a tuple use the in keyword"""
+    thistuple = ("apple", "banana", "cherry")
+        if "apple" in thistuple:
+        print("Yes, 'apple' is in the fruits tuple")
+    
+    """Tuple Length - To determine how many items a tuple has, use the len() method"""
+    thistuple = ("apple", "banana", "cherry")
+    print(len(thistuple))
+
+    """Add Items - Once a tuple is created, you cannot add items to it. Tuples are unchangeable."""
+    thistuple = ("apple", "banana", "cherry")
+    thistuple[3] = "orange" # This will raise an error
+    print(thistuple)
+
+    """Remove Items - Tuples are unchangeable, so you cannot remove items from it, but you can delete the tuple completely."""
+    thistuple = ("apple", "banana", "cherry")
+    del thistuple
+    print(thistuple) #this will raise an error because the tuple no longer exists
+
+    """The tuple() Constructor - It is also possible to use the tuple() constructor to make a tuple."""
+    thistuple = tuple(("apple", "banana", "cherry")) # note the double round-brackets
+    print(thistuple)
+
+    """Tuple Methods - Python has two built-in methods that you can use on tuples."""
+    count()	#Returns the number of times a specified value occurs in a tuple
+    index()	#Searches the tuple for a specified value and returns the position of where it was found
 
 
 

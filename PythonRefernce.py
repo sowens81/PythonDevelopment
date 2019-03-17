@@ -286,6 +286,22 @@ exit()
     count()	#Returns the number of times a specified value occurs in a tuple
     index()	#Searches the tuple for a specified value and returns the position of where it was found
 
+#Sets
+    """Set - A set is a collection which is unordered and unindexed. In Python sets are written with curly brackets."""
+    thisset = {"apple", "banana", "cherry"}
+    print(thisset)
+
+    """Access Items - You cannot access items in a set by referring to an index, since sets are unordered the items has no index.
+    But you can loop through the set items using a for loop, or ask if a specified value is present in a set, by using the in keyword."""
+    thisset = {"apple", "banana", "cherry"}
+    for x in thisset:
+        print(x)
+    
+    """Access Items - Check if "banana" is present in the set."""
+    thisset = {"apple", "banana", "cherry"}
+    print("banana" in thisset)
+
+    
 
 
 

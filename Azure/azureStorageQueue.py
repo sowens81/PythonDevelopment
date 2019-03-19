@@ -2,8 +2,8 @@ from azure.storage.queue import QueueService
 
 quename = "mytestqueue"
 message = [u"Hello, World!", u"Hello, House!", u"Hello, God!"]
-accountname = "sotagteststhg1"
-accountkey = "Kfxhs6UnwVjqkI6u4ZatbB0kgOaYuVkcGCgiW9N9J7PygAblk63rB0KV28jqo/5TIJ30cxWmxhfy9F2wlmIFHg=="
+accountname = "xxxx"
+accountkey = "xxxx"
 
 queue_service = QueueService(account_name=accountname, account_key=accountkey)
 

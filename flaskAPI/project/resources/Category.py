@@ -10,7 +10,7 @@ class CategoryResource(Resource):
         categories = Category.query.all()
         categories = categories_schema.dump(categories).data
         return {'status': 'success', 'data': categories}, 200
-
+    
     def post(self):
         json_data = request.get_json(force=True)
         if not json_data:

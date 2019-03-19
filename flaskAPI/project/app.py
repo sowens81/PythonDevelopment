@@ -7,7 +7,8 @@ from resources.Comment import CommentResource
 api_bp = Blueprint('api', __name__)
 api = Api(api_bp)
 
-# Route
+# Routes
+
 api.add_resource(Hello, '/Hello')
 api.add_resource(CategoryResource, '/Category')
 api.add_resource(CommentResource, '/Comment')

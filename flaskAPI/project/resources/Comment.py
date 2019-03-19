@@ -32,5 +32,3 @@ class CommentResource(Resource):
         result = comment_schema.dump(comment).data
 
         return {'status': "success", 'data': result}, 201
-
-    # You can add the other methods here...

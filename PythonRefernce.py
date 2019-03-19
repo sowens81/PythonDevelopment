@@ -1,3 +1,4 @@
+#!/usr/bin/env python3.7
 # Python Learning Reference
 """This document is a guides on all of the Pyhton syntax and language
 Please use at your own risk"""

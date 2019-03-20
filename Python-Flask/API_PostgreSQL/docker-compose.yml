@@ -1,0 +1,24 @@
+version: '3.5'
+services:
+  flaskapi:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
+  flaskapidb:
+    image: ppostgres:latest
+    container_name: "flaskapidb"
+    environment:
+      - POSTGRES_PASSWORD='Password123!' 
+      - POSTGRES_USER='flaskdbuser' 
+      - POSTGRES_DB='flaskapidb'
+    volumes:
+      - ./data/db:/usr/data/db
+    ports:
+      - 5432:5432
+networks:
+  default:
+    name: flaskapinw
+
+ 
